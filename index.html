@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+
+<body class="my-8 mx-10">
+    <header class="border-b-2 mb-5">
+        <div class="navbar bg-base-100 mb-5">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <button id="sort" onclick="handleSort()" class="btn bg-[#25252533]">Sort by view</button>
+                    </ul>
+                  </div>
+                <!-- <a class="btn normal-case text-xl">daisyUI</a> -->
+                <div>
+                    <img src="image/Logo.png" alt="">
+                    <!-- <p>PH Tube</p> -->
+                </div>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <button class="btn bg-[#25252533]">Sort by view</button>
+            </div>
+            <div class="navbar-end">
+                <a href="blog.html" class="btn bg-[#FF1F3D] text-white ">Blog</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <div class="tab-container">
+        <div class="tabs text-center flex justify-center mb-5" id="tab-container">
+            <!-- <a class="tab">All</a> 
+            <a class="tab">Music</a> 
+            <a class="tab">Comedy</a>
+            <a class="tab">Drawing</a> -->
+          </div>
+       </div> 
+<!-- card  -->
+       <section>
+        <div id="card-container" class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4">
+            <!-- <div class="card bg-base-100 shadow-xl">
+                <figure><img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Shoes!</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div> -->
+        </div>
+        <div id="card-container-2" class="hidden flex justify-center mt-40 text-center  items-center">
+
+        </div>
+       </section>
+    </main>
+<script src="js/hub.js"></script>
+</body>
+
+</html>
